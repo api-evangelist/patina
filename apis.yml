@@ -1,7 +1,24 @@
 aid: patina
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/patina.png
 name: Patina
-description: Patina is a company surfaced as a portfolio company of a16z, gv and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Patina was a technology-enabled primary care provider for adults 65 and
+  older, delivering human, personalized, on-demand care through a mobile app that let
+  patients chat or speak with their care team, view medical information, share photos
+  and videos, ask questions, and schedule visits. Headquartered in Philadelphia, the
+  venture-backed company (a16z, GV) has closed its clinical practice; patinahealth.com
+  now serves as a records resource, with patient medical records maintained by custodian
+  Morgan Records Management. Patina publishes no public API, developer portal, or SDKs.
 url: https://raw.githubusercontent.com/api-evangelist/patina/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Healthcare
+- Primary Care
+- Senior Care
+- Telehealth
+- Digital Health
+- Closed
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +45,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/patina-domain-security.yml
 - type: Website
-  url: http://patinahealth.com
+  url: https://patinahealth.com
+- type: LinkedIn
+  url: https://www.linkedin.com/company/patinahealth
+- type: Twitter
+  url: https://x.com/patinahealth
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
